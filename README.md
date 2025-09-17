@@ -14,7 +14,8 @@ This is the **first version (V1)** of my portfolio, designed to showcase skills,
 ## 🛠️ Tech Stack
 - **Framework/Build Tool:** Vite  
 - **Language:** TypeScript  
-- **Styling:** CSS / utility-first approach (customizable)  
+- **Styling:** Tailwind and React libraries
+- **Animating** React Motion 
 - **Linting:** ESLint for clean code  
 
 ## 🚀 Getting Started
