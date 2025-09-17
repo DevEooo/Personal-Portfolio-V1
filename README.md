@@ -15,8 +15,7 @@ This is the **first version (V1)** of my portfolio, designed to showcase skills,
 - **Framework/Build Tool:** Vite  
 - **Language:** TypeScript  
 - **Styling:** Tailwind and React libraries
-- **Animating** React Motion 
-- **Linting:** ESLint for clean code  
+- **Animating:** React Motion 
 
 ## 🚀 Getting Started
 Clone this repository and install dependencies:
@@ -36,8 +35,3 @@ Some contents and features are still work-in-progress:
 
 Future updates will address these issues to make the portfolio more polished and user-friendly.
 
-```bash
-git clone https://github.com/yourusername/school-portfolio.git
-cd "School Portfolio"
-npm install
-npm run dev
