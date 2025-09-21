@@ -8,7 +8,7 @@ export function Projects() {
       id: 1,
       title: "SDN Ponter 3 - Elementary School Website",
       description: "A collaborated elementary school project with local elementary school, Integrated dynamicly using real data.",
-      mockupImage: "../../public/resources/mockups/Ponter3.png",
+      mockupImage: "/resources/mockups/Ponter3.png",
       technologies: ["HTML", "PHP", "CSS", "JavaScript"],
       liveUrl: "https://deveooo.github.io/SDN-Pondok-Terong-3/",
       githubUrl: "https://github.com/DevEooo/SDN-Pondok-Terong-3"
@@ -17,7 +17,7 @@ export function Projects() {
       id: 2,
       title: "WinterAI - Telegram Chatbot",
       description: "WinterAI is a personal AI chatbot powered by Gemini LLM for Telegram, designed to be a calm and intelligent companion that representing reserved personality.",
-      mockupImage: "../../public/resources/mockups/WinterAI.png",
+      mockupImage: "/resources/mockups/WinterAI.png",
       technologies: ["Python", "Telegram API", "Gemini", "Telegram API Key"],
       liveUrl: "#",
       githubUrl: "https://github.com/DevEooo/WinterAI-Telegram-Chatbot"
@@ -26,7 +26,7 @@ export function Projects() {
       id: 3,
       title: "Housing Property",
       description: "A digital housing property website that streamlines property listing, tenant applications, and management for landlords, agents, and renters.",
-      mockupImage: "../../public/resources/mockups/HousingProperty.png",
+      mockupImage: "/resources/mockups/HousingProperty.png",
       technologies: ["React", "TypeScript", "Firebase", "Tailwind"],
       liveUrl: "#",
       githubUrl: "https://github.com/DevEooo/Housing-Property"

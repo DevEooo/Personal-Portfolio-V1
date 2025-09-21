@@ -41,7 +41,7 @@ export function About() {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src="../../public/resources/image/herald.jpg"
+                  src="/resources/image/herald.jpg"
                   alt="Herald Panji Dwilaksono"
                   className="w-full h-full object-cover"
                 />
@@ -61,10 +61,10 @@ export function About() {
           >
             <div className="text-gray-300 text-lg leading-relaxed space-y-4">
               <p>
-                Hi, I’m Herald, a junior developer with a passion for building intelligent and meaningful digital tools. I enjoy creating projects that combine problem-solving with curiosity—just like WinterAI, my personal AI designed to push my skills while experimenting with LLM-powered chat utilities. 
+                Hi, I’m Herald, a junior developer with a passion for building intelligent and meaningful digital tools. I enjoy creating projects that combine problem-solving with curiosity. just like WinterAI, my personal AI designed to push my skills while experimenting with LLM-powered chat utilities. 
               </p>
               <p>
-                I’ve focused on exploring AI-driven solutions and experimenting with ways technology can make everyday life easier. Beyond coding, I’m constantly learning—whether it’s through developing personal projects or studying languages like English and German, which expand how I connect with people.
+                I’ve focused on exploring AI-driven solutions and experimenting with ways technology can make everyday life easier. Beyond coding, I’m constantly learning. whether it’s through developing personal projects or studying languages like English and German, which expand how I connect with people.
               </p>
               <p>
                 I love diving into new challenges, collaborating with others, and turning ideas into functional solutions. Take a look at my projects to see what I’ve been working on, and feel free to reach out if you’d like to connect or collaborate!
