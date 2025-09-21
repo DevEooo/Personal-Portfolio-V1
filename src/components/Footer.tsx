@@ -21,7 +21,7 @@ export function Footer() {
         {/* Main Footer Content */}
         <div className="container mx-auto px-6 py-16">
           <div className="grid lg:grid-cols-3 gap-12 items-start">
-            {/* Left: Logo and Description */}
+            {/* Logo and Desc */}
             <motion.div
               className="space-y-4"
               initial={{ opacity: 0, y: 50 }}
@@ -36,13 +36,15 @@ export function Footer() {
               </p>
               <div className="flex space-x-4">
                 {[
-                  { icon: Github, href: '#', label: 'GitHub' },
-                  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-                  { icon: Instagram, href: '#', label: 'Instagram' }
+                  { icon: Github, href: 'https://github.com/DevEooo', label: 'GitHub', target: '_blank', rel: 'noopener noreferrer' },
+                  { icon: Linkedin, href: 'https://www.linkedin.com/in/herald-panji-dwilaksono-515444346/', label: 'LinkedIn', target: '_blank', rel: 'noopener noreferrer' },
+                  { icon: Instagram, href: 'https://www.instagram.com/rlds__/', label: 'Instagram', target: '_blank', rel: 'noopener noreferrer' }
                 ].map((social, index) => (
                   <motion.a
                     key={social.label}
                     href={social.href}
+                    target={social.target}
+                    rel={social.rel}
                     className="w-10 h-10 bg-gray-800 hover:bg-purple-600 text-gray-400 hover:text-white rounded-lg flex items-center justify-center transition-all duration-300 group"
                     whileHover={{ scale: 1.1, y: -2 }}
                     whileTap={{ scale: 0.95 }}
@@ -57,7 +59,7 @@ export function Footer() {
               </div>
             </motion.div>
 
-            {/* Center: Quick Navigation */}
+            {/* Quick Navigation */}
             <motion.div
               className="text-center"
               initial={{ opacity: 0, y: 50 }}
@@ -89,7 +91,7 @@ export function Footer() {
               </div>
             </motion.div>
 
-            {/* Right: Contact Info */}
+            {/* Contact Info */}
             <motion.div
               className="text-right"
               initial={{ opacity: 0, y: 50 }}
@@ -109,13 +111,13 @@ export function Footer() {
                   whileHover={{ x: -5 }}
                   className="transition-all duration-300"
                 >
-                  📧 herald@example.com
+                  📧 heralddpanji@gmail.com
                 </motion.div>
                 <motion.div
                   whileHover={{ x: -5 }}
                   className="transition-all duration-300"
                 >
-                  🌐 Available for freelance
+                  🌐 Available for work and internship
                 </motion.div>
               </div>
               
@@ -156,18 +158,6 @@ export function Footer() {
                 © {currentYear} Herald Dwilaksono. All Rights Reserved.
               </motion.p>
               
-              <motion.div
-                className="flex items-center space-x-6 text-sm"
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 1.2 }}
-                viewport={{ once: true }}
-              >
-                <span className="text-gray-500">Made with</span>
-                <span className="text-red-500 animate-pulse">❤️</span>
-                <span className="text-gray-500">and</span>
-                <span className="text-blue-400">React</span>
-              </motion.div>
             </div>
           </div>
         </motion.div>

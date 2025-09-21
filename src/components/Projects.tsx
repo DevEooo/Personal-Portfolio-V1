@@ -6,30 +6,30 @@ export function Projects() {
   const projects = [
     {
       id: 1,
-      title: "A Simple Elementary School Website",
-      description: "A Website of \"SDN Pondok Terong 3\" built with HTML, PHP, CSS and JavaScript.",
-      mockupImage: "https://images.unsplash.com/photo-1730794545099-14902983739d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBtb2NrdXAlMjB3ZWJzaXRlJTIwZGVzaWdufGVufDF8fHx8MTc1NjgwNzMxNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      title: "SDN Ponter 3 - Elementary School Website",
+      description: "A collaborated elementary school project with local elementary school, Integrated dynamicly using real data.",
+      mockupImage: "../../public/resources/mockups/Ponter3.png",
       technologies: ["HTML", "PHP", "CSS", "JavaScript"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://deveooo.github.io/SDN-Pondok-Terong-3/",
+      githubUrl: "https://github.com/DevEooo/SDN-Pondok-Terong-3"
     },
     {
       id: 2,
-      title: "Telegram Chatbot – GeminiAI Based LLM",
-      description: "An intelligent Telegram bot powered by Google's Gemini AI for natural language conversations.",
-      mockupImage: "https://images.unsplash.com/photo-1669850850090-54237ab4a4a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbW9ja3VwJTIwbW9iaWxlJTIwYXBwfGVufDF8fHx8MTc1NjczODQyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      technologies: ["Python", "Telegram API", "Gemini AI", "Flask"],
+      title: "WinterAI - Telegram Chatbot",
+      description: "WinterAI is a personal AI chatbot powered by Gemini LLM for Telegram, designed to be a calm and intelligent companion that representing reserved personality.",
+      mockupImage: "../../public/resources/mockups/WinterAI.png",
+      technologies: ["Python", "Telegram API", "Gemini", "Telegram API Key"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/DevEooo/WinterAI-Telegram-Chatbot"
     },
     {
       id: 3,
-      title: "Sportify – A Copy of Spotify",
-      description: "A Spotify clone featuring music streaming, playlists, and user authentication with modern UI/UX.",
-      mockupImage: "https://images.unsplash.com/photo-1588200908342-23b585c03e26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNrdG9wJTIwY29tcHV0ZXIlMjBzY3JlZW4lMjBtb2NrdXB8ZW58MXx8fHwxNzU2ODA3MzE2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
+      title: "Housing Property",
+      description: "A digital housing property website that streamlines property listing, tenant applications, and management for landlords, agents, and renters.",
+      mockupImage: "../../public/resources/mockups/HousingProperty.png",
+      technologies: ["React", "TypeScript", "Firebase", "Tailwind"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/DevEooo/Housing-Property"
     }
   ];
 
@@ -108,6 +108,8 @@ export function Projects() {
                 <div className="flex space-x-4">
                   <motion.a
                     href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -117,6 +119,8 @@ export function Projects() {
                   </motion.a>
                   <motion.a
                     href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-gray-300 px-6 py-3 rounded-lg font-medium transition-colors duration-300"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

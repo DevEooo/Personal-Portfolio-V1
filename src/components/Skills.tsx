@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Badge } from './ui/badge';
 import { TechIcon } from './TechIcons';
+import { Code, Layers, FolderOpen, Calendar } from 'lucide-react';
 
 export function Skills() {
   const skillCategories = [
@@ -12,6 +13,7 @@ export function Skills() {
         { name: "HTML", level: "Advanced", proficiency: 95 },
         { name: "Tailwind", level: "Intermediate", proficiency: 78 },
         { name: "Bootstrap", level: "Intermediate", proficiency: 78 },
+        { name: "TypeScript", level: "Learning", proficiency: 48 }
       ]
     },
     {
@@ -47,6 +49,16 @@ export function Skills() {
     }
   };
 
+  const getStatIcon = (label: string) => {
+    switch (label) {
+      case "Programming Languages": return <Code size={24} className="text-purple-400" />;
+      case "Frameworks": return <Layers size={24} className="text-purple-400" />;
+      case "Projects": return <FolderOpen size={24} className="text-purple-400" />;
+      case "Years of Experience": return <Calendar size={24} className="text-purple-400" />;
+      default: return <div className="w-6 h-6 bg-purple-400 rounded-full"></div>;
+    }
+  };
+
   return (
     <section id="skills" className="py-20 relative">
       <div className="container mx-auto px-6">
@@ -75,7 +87,7 @@ export function Skills() {
               viewport={{ once: true }}
             >
               <h3 className="text-2xl font-bold text-white mb-6 text-center">{category.title}</h3>
-              
+
               <div className="space-y-4">
                 {category.skills.map((skill, index) => (
                   <motion.div
@@ -93,14 +105,14 @@ export function Skills() {
                         </div>
                         <span className="text-white font-medium">{skill.name}</span>
                       </div>
-                      <Badge 
-                        variant="outline" 
+                      <Badge
+                        variant="outline"
                         className={`text-xs px-2 py-1 ${getLevelColor(skill.level)}`}
                       >
                         {skill.level}
                       </Badge>
                     </div>
-                    
+
                     {/* Proficiency Bar */}
                     <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
                       <motion.div
@@ -111,7 +123,7 @@ export function Skills() {
                         viewport={{ once: true }}
                       />
                     </div>
-                    
+
                     {/* Proficiency Percentage */}
                     <div className="text-right mt-1">
                       <motion.span
@@ -140,10 +152,10 @@ export function Skills() {
           viewport={{ once: true }}
         >
           {[
-            { label: "Programming Languages", value: "8+" },
-            { label: "Frameworks", value: "3" },
-            { label: "Projects", value: "10+" },
-            { label: "Years of Experience", value: "2" }
+            { label: "Programming Languages", value: "8+", icon: "Code" },
+            { label: "Frameworks", value: "3", icon: "Layers" },
+            { label: "Projects", value: "10+", icon: "FolderOpen" },
+            { label: "Years of Experience", value: "2", icon: "Calendar" }
           ].map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -155,7 +167,7 @@ export function Skills() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mb-3 mx-auto">
-                <div className="w-6 h-6 bg-purple-400 rounded-full"></div>
+                {getStatIcon(stat.label)}
               </div>
               <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
               <div className="text-gray-400 text-sm">{stat.label}</div>
@@ -173,7 +185,7 @@ export function Skills() {
         >
           <h3 className="text-xl font-bold text-white mb-4">Currently Learning</h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {['Kotlin', 'Firebase', 'Laravel', 'Python'].map((tech, index) => (
+            {['Kotlin', 'Firebase', 'Laravel', 'Python', 'Automation'].map((tech, index) => (
               <motion.span
                 key={tech}
                 className="px-4 py-2 bg-purple-600/20 text-purple-300 rounded-full text-sm border border-purple-500/30"

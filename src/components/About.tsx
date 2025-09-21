@@ -41,7 +41,7 @@ export function About() {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src="/resources/herald.jpg"
+                  src="../../public/resources/image/herald.jpg"
                   alt="Herald Panji Dwilaksono"
                   className="w-full h-full object-cover"
                 />
@@ -61,13 +61,13 @@ export function About() {
           >
             <div className="text-gray-300 text-lg leading-relaxed space-y-4">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vel ex nostrum provident architecto consequuntur! Sequi sint dolores sunt natus amet aut! Fugiat quae maxime voluptates tempore atque, suscipit totam?
+                Hi, I’m Herald, a junior developer with a passion for building intelligent and meaningful digital tools. I enjoy creating projects that combine problem-solving with curiosity—just like WinterAI, my personal AI designed to push my skills while experimenting with LLM-powered chat utilities. 
               </p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate nulla, aut quod nemo dicta ad ea neque ullam incidunt recusandae dolorem odit quisquam fugit enim eligendi sed minus facilis amet.
+                I’ve focused on exploring AI-driven solutions and experimenting with ways technology can make everyday life easier. Beyond coding, I’m constantly learning—whether it’s through developing personal projects or studying languages like English and German, which expand how I connect with people.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid et ducimus, eveniet recusandae sit hic animi nemo tempora commodi. Perferendis.
+                I love diving into new challenges, collaborating with others, and turning ideas into functional solutions. Take a look at my projects to see what I’ve been working on, and feel free to reach out if you’d like to connect or collaborate!
               </p>
             </div>
 
